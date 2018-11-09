@@ -7,7 +7,6 @@ public class Ponto {
     private double x;
     private double y;
     private double z;
-    private String nome = "Ponto";
 
     public Ponto(){
         this.x = 0;
@@ -22,7 +21,7 @@ public class Ponto {
     }
 
     public String getNome() {
-        return nome;
+        return this.getClass().getSimpleName();
     }
 
     @Override
